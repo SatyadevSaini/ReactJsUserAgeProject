@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(60, 58, 58); 
+  }
+
+.form_Div{
+    padding-top: 5vh;
+    background-color: rgb(244, 247, 250);
+    padding-left: 1vw;
+    padding-bottom: 5vh;
+    width: 80vh;
+    border-color: rgb(178, 182, 182);
+    border-style: solid;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 10vh;
+    margin-left: 30vw;
+}
+
+.add-Button{
+    padding-top: 2vh;
+}
+.form_Age{
+    padding-top: 1vh;
+   
+}
+.form_Username{
+    padding-top: 1vh;
+}
+
+.form_Age input{
+    padding-top: 1vh;
+}
+
+.form_Div input{
+    height: 5vh;
+    width: 70vh;
+    font-size: 3vh;
+}
+
+.form_Div label{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.form_Div button{
+    height: 5vh;
+    width: 20vh;
+    font-size: 3vh;
+    background-color: rgb(83, 4, 157);
+    color: aliceblue;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+
+.printing_Div{
+    
+    height: max-content;
+    padding: 1vh;
+    background-color: darkblue;
+    margin-top: 2vh;
+    font-size: large;
+    color: azure;
+    border-color: rgb(178, 182, 182);
+    border-style: solid;
+    border-radius: 25px 25px 25px 25px;
+    width: 85vh;
+    text-align: center;
+   
+}
+
+.Printing_Data {
+    border-color: rgb(214, 242, 242);
+    border-style: solid;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(152, 162, 162);
+    padding: 2vh;
+    width: min-content;
+    margin-left: 58vh;
+    margin-top: 5vh;
+    
+}

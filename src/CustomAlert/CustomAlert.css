@@ -1,0 +1,30 @@
+.custom-alert {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .success {
+    background-color: #66bb6a;
+    color: white;
+  }
+  
+  .error {
+    background-color: #ef5350;
+    color: white;
+  }
+  
+  .warning {
+    background-color: #ffa726;
+    color: white;
+  }
+  
+  .custom-alert-icon {
+    margin-right: 10px;
+  }
+  
+  .custom-alert-message {
+    margin: 0;
+  }
