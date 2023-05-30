@@ -7,19 +7,19 @@ const PrintData = (props) => {
 
  const [array , updatedArray]    = useState(
     [
-        {age:23 , username:"Satya" , id:"jah"},
-        {age:28 , username:"Vivek" , id:"ah"}
+        {age:23 , username:"Satya" , college:"UIT" , id:"jah"},
+        {age:28 , username:"Vivek" , college:"GGSPU", id:"ah"}
 
     ] 
    );
 
-const getValueFromFormCreate = (values1 , values2) => {
+const getValueFromFormCreate = (values1 , values2 , values3) => {
        
        updatedArray( prevArray => {
       
         const colllectingallData = [...prevArray];
            
-        colllectingallData.unshift({age:values1 , username:values2 , id: Math.random.toString()});
+        colllectingallData.unshift({age:values1 , username:values2 , college: values3 , id: Math.random.toString()});
     
         console.log(colllectingallData);
         console.log(values1 +"  "+ values2);
@@ -41,7 +41,7 @@ const getValueFromFormCreate = (values1 , values2) => {
          <div className="printing_Div" key={value.id} >
         
        
-   <div>  Name:{value.username  } {"||"} Age:{  value.age+"(inYears)"} </div> 
+   <div>  Name:{value.username  } {"||"} College:{value.college}  {"||"}Age:{  value.age+"(inYears)"} </div> 
 
              
       

@@ -10,6 +10,8 @@ const FormCreate = (props) => {
 
   const ageByRef = useRef();
   const NameByRef = useRef();
+  const collegeByRef = useRef();
+
 
 //   console.log(ageByRef.current.value)
 
@@ -34,11 +36,15 @@ const FormCreate = (props) => {
     const sendValueHere = (event) => {
         const AGE = ageByRef.current.value;
         const NAME = NameByRef.current.value;
+        const COLLEGE = collegeByRef.current.value;
       
         console.log(NAME)
         console.log(AGE);
+        console.log(COLLEGE)
+        console.log(COLLEGE)
         console.log(AGE);
         console.log(NAME)
+
         
         
 
@@ -55,7 +61,7 @@ const FormCreate = (props) => {
 
         }else{
             // props.sendValue(currentAge , currentUsername);  // this send value function will send value from there ..... 
-            props.sendValue(AGE , NAME);  // this send value function will send value from there ..... 
+            props.sendValue(AGE , NAME , COLLEGE);  // this send value function will send value from there ..... 
             // ageByRef("")
             // NameByRef("")
         }
@@ -64,6 +70,7 @@ const FormCreate = (props) => {
 
            ageByRef.current.value="";
            NameByRef.current.value="";
+           collegeByRef.current.value="";
 
            //******************reset the REF********************************
 
@@ -90,7 +97,15 @@ const FormCreate = (props) => {
          <div>
             <input type="number" placeholder="AGE" value={currentAge} onChange={GetAge} ref={ageByRef} />
          </div>
-          </div>   
+          </div> 
+
+           <div className="form_UserName">
+
+         <label>CollegeName</label>
+         <div>
+            <input type="text" placeholder="COLLEGE"  ref={collegeByRef}/>
+         </div>
+          </div>  
                     <div className="add-Button">
                         <button className="add-Button_d">Add User</button>
                     </div>
